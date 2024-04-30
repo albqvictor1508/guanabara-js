@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplicando</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    body {
+        height: 100vh;
+        display: grid;
+        place-content: center;
+        background: darkblue url('anotações/-\ Find\ &\ Share\ on\ GIPHY.gif') center center no-repeat fixed;
+        background-size: cover;
+    }
+    input {
+        width: 50px;
+        padding: 2px;
+        box-shadow: inset 2px 2px 15px rgba(0, 0, 0, 0.356);
+        border: 2px solid black;
+
+    }
+    main {
+        max-width: 300px;
+        background-color: rgba(255, 255, 255, 0.329);
+        padding: 12px;
+        border: 2px solid black;
+    }
+    button {
+        margin:  20px auto;
+        display: block;
+        color: white;
+        background-color: black;
+        border: 0px;
+        width: 80px;
+        padding: 4px;
+        border-radius: 10px;
+
+    }
+    button:hover {
+        background-color: white;
+        color: black;
+        transition-duration: 1s;
+    }
+    p {
+        background-color: white;
+        padding: 1px;
+        margin-bottom: 20px;
+        border: 2px solid rgb(0, 0, 0);
+    }
+
+</style>
+<body>
+    <main>
+        <p id="tela">0</p>
+        <div>
+            <input type="number" id="input1">
+            <input type="number" id="input2">
+            <button id="btn">Multiplique!</button>
+        </div>
+    </main>
+    
+    <script>
+        var btn = document.getElementById('btn')
+        btn.addEventListener('click', multiplicar)
+
+        function multiplicar() {
+            var input1 = document.getElementById('input1')
+            var input2 = document.getElementById('input2')
+
+            var n1 = Number(input1.value)
+            var n2 = Number(input2.value)
+
+            var mult = n1 * n2
+
+            var tela = document.getElementById('tela')
+            
+            tela.innerHTML = mult
+
+        }
+
+    </script>
+</body>
+</html>

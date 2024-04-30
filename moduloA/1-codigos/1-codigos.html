@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros Códigos JS</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body {
+            height: 95vh;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: yellow;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            display: grid;
+            place-content: center;
+            place-items: center;
+
+        }
+        main {
+            margin-bottom: 50px;
+            text-align: center;
+            
+            
+        }
+        main h1,h2 {
+            padding: 15px;
+        }
+        div {
+            max-width: 400px;
+            background-color: rgb(0, 0, 0);
+            border: 2px solid rgba(255, 255, 0, 0.63);
+            padding: 15px;
+            color: white;
+            border-radius: 10px;
+        }
+        div p {
+            padding-bottom: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>JS</h1>
+        <h2>Comandos básicos com "window"</h2>
+    </main>
+    <div>
+        <p>usei "window.alert('')" para dar um recado assim que o site for acessado</p>
+
+        <p>e usei "window.confirm('') para que o usuário consiga responder oque foi perguntado no recado</p>
+
+        <p>window.prompt cria uma caixa de texto para que o usuário possa responder oque é pedido no recado</p>
+    </div>
+    <script>
+        window.alert('Minha primeira mensagem em JS');
+        window.confirm('está gostando de js?')
+        window.prompt('qual sua cor favorita')
+    </script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Exercicio 3 - DOM</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1.2em;
+        
+    }
+    header {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 40px;
+    }
+    main {
+        margin-top: 40px;
+    }
+
+    section {
+        max-width: 97vw;
+        margin: auto;
+    }
+    section div {
+        border: 1px solid black;
+        border-radius: 15px;
+        box-shadow: 10px 5px 10px  rgba(0, 0, 0, 0.226);
+        margin-bottom: 30px;
+    }
+    section h2 {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    p {
+        padding: 10px;
+    }
+    ul {
+        list-style-position: inside;
+        padding: 10px;
+    }
+    li {
+        padding-bottom: 10px;
+    }
+    span {
+        color: darkred;
+        font-weight: bold;
+    }
+    #exemplo {
+        text-align: center;
+        font-size: 1.5em;
+        padding: 55px;
+        font-weight: bold;
+    }
+    div input {
+        width: 60px;
+        margin: 10px;
+        padding: 5px;
+        border-radius: 10px;
+        border: 2px solid black;
+        box-shadow: inset 2px 2px 10px rgba(0, 0, 0, 0.274);
+        text-align: center;
+        font-weight: bold;
+    }
+    div button {
+        width: 150px;
+        padding: 4px;
+        border-radius: 10px;
+        border: 0px;
+        background-color: black;
+        color: white;
+
+    }
+</style>
+<body>
+    <header>
+        <h1>Eventos DOM</h1>
+    </header>
+    <main>
+    <section>
+        <h2>Funções</h2>
+        <div>
+            <p>Conjunto de linhas de código que só serão executadas quando o evento ocorrer</p>
+
+            <p>(este conjunto de linhas são denominados blocos)</p>
+            
+            <p>Estes são os seguintes passos para se usar uma function</p>
+            <ul>
+                <li>um bloco em JS é delimitado entre {} (tipo o css)</li>
+                <li>precisa ser nomeado como <span>function</span> + ação()</li>
+                <li>também pode por parâmetros na function (function ação(parametro) {
+                    })</li>
+            </ul>
+        </div>
+
+        <h2>Exemplo de uma função de clique</h2>
+        <div id="exemplo">
+            Clica aqui viado...
+        </div>
+        <div>
+            <p>mas como pode ver, adicionar essas funções poluiu muito o html, como usar style no css local dentro da tag</p>
+
+            <p>oque dificulta o entendimento e deixa seu código sujo, oque prejudica outras pessoas de ler</p>
+
+            <p>então ao em vez de colocar o evento no HTML, usaremos um "ouvidor" ou chamado de "EventListener" para fazer aplicar os eventos no JS em vez de dentro da tag HTML</p>
+
+            <p style="font-weight: bold;">DICA DE OURO: (se tiver com erros no JS, o VScode ou qualquer outro editor de código não mostrará o erro pois o JS não tem essa propriedade, porém o Google Chrome detecta o erro no seu modo de desenvolvedor, então pode ir ver oque está errado no seu código)    </p>
+        </div>
+        <h2>Anotações - Eventos DOM</h2>
+    <div>
+        <p>
+            eventos com o mouse
+        </p>
+        <ul>
+            <li>mouse-enter</li>
+            <li>mousedown</li>
+            <li>mousemove</li>
+            <li>click</li>
+            <li>mouseout</li>
+        </ul>
+    </div>
+    <h2>Buscar Valores</h2>
+    <div>
+        <p>Digite o primeiro número:</p>
+        <input type="number" name="txtn1" id="txtn1">
+        <p>Digite o segundo número:</p>
+        <input type="number" name="txtn2" id="txtn2">
+        <p><button id="btn">Somar!</button></p>
+        <p id="res">Resultado: </p>
+
+
+    </div>
+
+</section>
+</main>
+    
+    <script>
+      var out = document.getElementById('exemplo')
+      var clique =  document.getElementById('exemplo')
+      var int = document.getElementById('exemplo')
+
+      var tn1 = document.getElementById('txtn1')
+      var tn2 = document.getElementById('txtn2')
+      var n1 = Number(tn1.value)
+      var n2 = Number(tn2.value)
+      var button = document.getElementById('btn')
+
+
+      btn.addEventListener('click', somar)
+
+      function somar() {
+        var tn1 = document.getElementById('txtn1')
+      var tn2 = document.getElementById('txtn2')
+      var n1 = Number(tn1.value)
+      var n2 = Number(tn2.value)
+      var button = document.getElementById('btn')
+        var s = n1 + n2
+        var res = document.getElementById('res')
+        res.innerHTML = `Resultado: ${s}`
+
+      }
+
+      clique.addEventListener('click', clicar)
+      out.addEventListener('mouseout', sair)
+      int.addEventListener('mouseenter', entrar)
+
+        function clicar() {
+           clique.innerHTML = 'Clicou!'
+           clique.style.color = 'black'
+           clique.style.background = 'yellow'
+        }
+        function entrar() {
+
+            int.style.color = 'white'
+            int.style.background = 'red'
+            int.innerHTML = 'SAAAAAI'
+        }
+        function sair() {
+            out.style.color = 'white'
+            out.style.background = 'green'
+            out.innerHTML = 'Entra dnv bebê'
+        }
+    </script>
+</body>
+</html>

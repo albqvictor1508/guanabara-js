@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body {
+            background: black url('What-Is-JavaScript-Used-For.png') center center no-repeat fixed;
+            background-size: cover;
+            width: 100vw;
+            display: grid;
+            place-content: center;
+            font-family: Arial, Helvetica, sans-serif;
+
+
+        }
+        main h1 {
+            background-color: rgb(255, 208, 0);
+            margin: -5px;
+            padding:10px;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            border-radius: 10px 10px 0px 0px;
+        }
+        main {
+            background-color: rgb(255, 255, 255);
+            max-width: 550px;
+            color: rgb(0, 0, 0);
+            border-radius: 10px;
+            padding: 5px;
+            border: 2px solid white;
+            word-break: break-all;
+
+        }
+        main h2 {
+            padding-top: 10px;
+            padding-bottom:15px;
+            text-align: center;
+            color: rgb(185, 185, 6);
+        }
+        main p {
+            padding: 10px;
+        }
+        main ul {
+            list-style-position: inside;
+            padding: 5px;
+        }
+        .precendencia {
+            color: rgb(185, 185, 6);
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Operadores-JS</h1>
+
+        <h2>Trabalharemos com os seguintes operadores</h2>
+
+        <ul>
+            <li>Op. aritméticos</li>
+            <li>Op. de atribuição</li>
+            <li>Op. relacionais</li>
+            <li>Op. lógico</li>
+            <li>Op. ternário</li>
+        </ul>
+        <h2>Aritméticos</h2>
+
+        <p>Antes de começar, é importante lembrar a precedência aritmética</p>
+        <p class="precedencia">
+            <pre>
+                []
+                ()
+                **
+                *, /, % 
+                +, - 
+            </pre>
+        </p>
+        <p>(* / %) quem aparecer primeiro da esquerda para direita, é o primeiro a ser executado</p>
+        <ul>
+            <li>+ = soma</li>
+            <li>"-" = subtrai</li>
+            <li>* =  multiplica</li>
+            <li>/ = divide</li>
+            <li>% = resto da divisão inteira</li>
+            <li>** = potência</li>
+        </ul>
+
+        <h2>Auto-Atribuição</h2>
+        <p>
+            <pre>
+                <code>
+                    var n = 3
+                    n = n + 4
+                    n = n - 5
+                </code>
+            </pre>
+        </p>
+        <p>dps da soma "n + 4", o "n" deixa de ser 3 e passa a valer 7, depois da subtração de "n - 5", o n passa a ser 2 </p>
+
+        <p>o mesmo se aplica às outras operações</p>
+
+        <p>
+            <pre>
+                <code>
+                    n = n * 4
+                    n = n / 2
+                    n = n ** 2
+                    n = n % 5
+                </code>
+            </pre>
+        </p>
+
+        <h2>Simplificando</h2>
+
+        <p>
+            <pre>
+                <code>
+                    n += 4
+                    n += 5
+                    n *= 4
+                    n /= 2
+                    n **= 2
+                    n %= 5
+                </code>
+            </pre>
+        </p>
+
+        <h2>Incremento</h2>
+
+        <p>uma forma de resumir a auto-atribuição(n -= 1 e n += 1)</p>
+        
+        <p>No lugar de (n -= 1 e n += 1), fica (n++ e n--)</p>
+
+        <p>no NodeJS, se colocar (n++ e n--) vai retornar o valor antigo, mas se perguntar o valor da variável, dirá qual é o novo valor</p>
+
+        <p>Isso pode ser revertido mudando a ordem, colocando (++n e --n) no lugar de (n++ e n--) o valor será retornado no momento em que a incrementação for feita</p>
+
+        <h1>Op. relacionais</h1>
+
+        <p>
+            <pre>
+                <code>
+                    > (maior que)
+                    < (menor que)
+                    >= (maior ou igual)
+                    <= (menor ou igual)
+                    == (igual)
+                    != (diferente)
+                </code>
+            </pre>
+        </p>
+        
+        <p>o op. relacional do JS não se limita ao tipo de dado, ou seja, um 5 e um "5" tem a mesma grandeza </p>
+
+        <p>
+            <pre>
+                <code>
+                    5 == "5"
+                    true
+                </code>
+            </pre>
+        </p>
+
+        <h2>Identidade (===)</h2>
+
+        <p>serve para relacionar se dois valores são iguais em grandeza e em tipo</p>
+
+        <p>
+            <pre>
+                <code>
+                    5 === "5"
+                    false
+                </code>
+            </pre>
+        </p>
+
+        <p>nesse caso mostra que não são idênticos</p>
+
+        <p>Desigual Restrito(!==), são tipos diferentes, porém o mesmo valor</p>
+
+        <h1>Operações Lógicas</h1>
+
+        <p>
+            <pre>
+                ! (negação)
+                && (conjunção)
+                || (disjunção)
+            </pre>
+        </p>
+
+        <p>Negação só tem um operando (true, false)</p>
+
+        <p>Conjunção é um operador binário, mas só é satisfeito tendo todas suas opções como verdadeiras, mais de um operando</p>
+
+        <p>Disjunção também é binário, porém basta 1 ser verdadeiro para que o resultado seja verdadeiro, diferente da Conjunção que necessita que os dois sejam verdadeiros. </p>
+
+        <h3>Exemplos:</h3>
+        <p>
+            <pre>
+    idade >= 15 && idade <= 18 'a idade está entre 15 e 18?'
+
+    estado == 'RJ' || estado == 'Mora no RJ ou em SP?'
+
+    salario > 1500 && sexo !='M' 'o salário é maior que 1500 e o sexo é F?'
+    </pre>
+    </p>
+
+    <h2>Ternário</h2>
+
+    <p>
+        ? (interrogação) e : (dois pontos)
+    </p>
+
+    <p>Funciona como uma condição (a interrogação acompanha a pergunta e os dois pontos as condições)</p>
+
+    <p>
+        <pre>
+            teste ? true : false
+        </pre>
+    </p>
+
+    <p>essa condição será ativada com a comparação do valor guardado na variável com qualquer outro valor</p>
+
+    <h2>Precedência</h2>
+
+    <p>Primeiro vem as <strong>aritméticas</strong>
+        <pre>
+            []
+            ()
+            **
+            *, /, % 
+            +, - 
+        </pre>
+    </p>
+    
+    
+
+    <p>Depois as <strong>relacionais</strong> (leitura da esquerda para direita, quem aparecer primeiro será executado) </p>
+
+    <p>Depois os lógicos (também chamados de não, e, ou)
+        <pre>
+            ! (negação)
+            && (conjunção)
+            || (disjunção) 
+        </pre>
+    </p>
+
+    </main>
+    <script>
+
+    </script>
+</body>
+</html>

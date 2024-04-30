@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-Anotações</title>
+</head>
+<body>
+    <main>
+        <h1>Oque é DOM?</h1>
+
+        <p>Document Object Model</p>
+
+        <p>conjunto de objetos dentro do navegador que dá acesso aos documentos internos do site</p>
+        <h2>Árvore DOM</h2>
+        
+        <p>
+            <pre>
+                window
+    location | document | history    
+            </pre>
+        </p>
+        <p> dentro de document:</p>
+        <p>
+            <pre>
+                document
+                  html
+               head | body
+            </pre>
+        </p>
+        <h2>método 'window'</h2>
+
+        <p><strong>window.alert</strong> (emite um alerta no navegador)</p>
+
+        <p><strong>window.confirm</strong> (emite um alerta no qual o usuário pode aceitar ou cancelar)</p>
+
+        <p><strong>window.prompt</strong> (emite um alerta com uma caixa de texto para que o usuário possa respoonder)</p>
+
+        <p><strong>window.document.write(window.document.charset)</strong> exibe no site o charset utilizado no HTML (UTF-8) </p>
+
+        <p><strong>window.document.write(window.navigator.appName)</strong> exibe no site qual navegador está sendo utilizado</p>
+
+        <p><strong>window.document.write(window.document.URL)</strong> exibe no site o URL</p>
+
+        <h2>Document</h2>
+
+        <p>selecionar elemento por marca(tag)
+            <pre>
+            getElementsByTagName()
+            </pre>
+        </p>
+
+        <p>
+            <pre>
+                <code>
+
+                            var p1 = document.getElementsByTagName("p")[0]
+            
+                            window.document.write(`primeiro elemento alterado com JS: ${p1.innerText})
+                </code>
+            </pre>
+        </p>
+
+        <p>a contagem no js começa do zero, e como tem dois elementos 'p' no html e eu queria usar o primeiro, coloco o 0 entre caixas nas frente</p>
+
+        <p>para usar elementos por seu nome (se utilizar a propriedade name)</p>
+
+        <p>
+            getElementsByTagName()
+        </p>
+        
+        <p>por ID (mais usual) para pegar elementos pelo seu ID</p>
+
+        <p>getElementById</p>
+
+        <p> <pre>
+            <code>
+                 var p4 = document.getElementById('div1').
+                    style.background = "black"
+                    p4.innerHTML ='Não clique em mim'
+                    p4.style.background ='black'
+            </code>
+        </pre>
+        </p>
+
+        <p>por Classe</p>
+
+        <p>getElementsByClassName</p>
+
+            <p>
+                usei o template string para junto com o método "innerText"(pega o texto que foi escrito no html) para que oque escrevi seja mostrado
+            </p>
+
+            <p>o método innerText pega somente o texto, porém o método innerHTML pega o texto com a formatação que foi colocado</p>
+
+            <p>Exemplo, se foi um h1, virá como h1, se tiver um strong ou um "em", essas tags também serão puxadas pelo innerHTML</p>
+
+            <p>(objeto que está sendo usado) + style + background = 'cor'</p>
+
+            <p>muda a cor do background</p>
+
+            <p>(objeto) + style + color = 'cor'</p>
+
+            <p>muda a cor da fonte</p>
+        
+
+    </main>
+    
+</body>
+</html>
