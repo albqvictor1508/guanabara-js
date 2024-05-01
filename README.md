@@ -13,7 +13,7 @@
   primeiros contatos com o JavaScript:</p>
 <ul>
   <li> <a href="https://albqvictor1508.github.io/guanabara-js/moduloC/index.html" style="color: white"/> Multiplicador</a></li>
-  <li><a href="https://albqvictor1508.github.io/guanabara-js/moduloD/idades.html" style="color: white"/>Analisador de Idades</a></li>
+  <li> <a href="https://albqvictor1508.github.io/guanabara-js/moduloD/idades.html" style="color: white"/>Analisador de Idades</a></li>
   </ul>
 <br><br><br><br>
 <h1 align="left">Redes Sociais</h1>
