@@ -23,7 +23,7 @@
  <br/>
  <br/>
  
-###Projetos que fiz com o primeiro contato que tive com JS no curso do guanabara:
+Projetos que fiz com o primeiro contato que tive com JS no curso do guanabara:
 <br>
 
 [Multiplicador](https://albqvictor1508.github.io/guanabara-js/moduloC/)
