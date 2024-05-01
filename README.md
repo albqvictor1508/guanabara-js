@@ -1,3 +1,4 @@
+
 ### Olá!, Me chamo Victor Albuquerque 🤙
 
 
@@ -10,26 +11,28 @@
 
 ### Tecnologias usadas:
 
-<div>
+<div style="display">
 <img align="center" alt="javascript" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
 
 <img align="center" alt="html5" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
 
 <img align="center" alt="CSS3" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
+
+<img align="center" alt="PYTHON" src="	https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
 </div>
  <br/>
  <br/>
-<p>Projetos que fiz com o primeiro contato que tive com JS no curso do guanabara:</p>
+ 
+###Projetos que fiz com o primeiro contato que tive com JS no curso do guanabara:
 <br>
 
 [Multiplicador](https://albqvictor1508.github.io/guanabara-js/moduloC/)
 
 [Analisador de Idades](https://albqvictor1508.github.io/guanabara-js/moduloD/idades.html)
 
-
-
 <style>
     div {
-        display: inline-block
+        display: inline-block;
     }
-</style> 
+</style>
+
