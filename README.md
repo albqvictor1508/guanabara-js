@@ -10,8 +10,10 @@
 - 💬 **JavaScript, HTML, CSS, JS, PYTHON**
 <br>
   <p>Este repositório possui projetos feitos com os meus
-  primeiros contatos com o JavaScript!</p>
-
-  <p><a href=""></p>
+  primeiros contatos com o JavaScript:</p>
+<ul>
+  <li> <a href="https://albqvictor1508.github.io/guanabara-js/moduloC/index.html" style="color: white"/> Multiplicador</li>
+    <li><a href="https://albqvictor1508.github.io/guanabara-js/moduloD/idades.html"/>Analisador de Idades</li>
+  </ul>
 
 
