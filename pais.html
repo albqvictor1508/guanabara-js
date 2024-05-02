@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>País</title>
+</head>
+<body>
+    <h2>Países</h2>
+
+    <p>você mora no Brasil??</p>
+
+    <input type="text" id="input">
+    <input type="button" value="Enviar" id="btn">
+
+    <p id="res"></p>
+
+
+    <script>
+        var btn = document.getElementById('btn')
+        btn.addEventListener('click', indentificar)
+
+        function identificar () {
+            var input = document.getElementById('input')
+            var res = document.getElementById('res')
+            if (input == 'sim') {
+                res.innerHTML = 'mlk imundo'
+            }
+        }
+    </script>
+</body>
+</html>
