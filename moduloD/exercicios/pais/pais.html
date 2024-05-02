@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>País</title>
+    <style>
+        h2 {
+            color: rgb(10, 109, 167);
+            font-size: 1.8em;
+        }
+        body {
+            font-family: 'Arial';
+        }
+        p {
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+    <h2>Países</h2>
+
+    <p>você mora no Brasil??</p>
+
+    <input type="text" id="input">
+    <input type="button" value="Enviar" id="btn">
+
+    <p id="res"></p>
+
+    <h2>Medidor de velocidade</h2>
+
+    <p>ta andando a quanto mermão?</p>
+
+    <input type="text" id="input2">
+    <input type="button" value="Enviar" id="btn2">
+
+    <p id="res2"></p>
+
+    <script>
+        var btn = document.getElementById('btn')
+        var btn2 = document.getElementById('btn2')
+        btn.addEventListener('click', identificar)
+        btn2.addEventListener('click', velocidade)
+
+
+        function identificar () {
+            var input = document.getElementById('input')
+            var res = document.getElementById('res')
+            var resposta = input.value
+            if (resposta == 'sim') {
+                res.innerHTML = 'mlk imundo'
+            }
+            else {
+                res.innerHTML = 'estrangeiro'
+            }
+        }
+        function velocidade() {
+            var input2 = document.getElementById('input2')
+            var res2 = document.getElementById('res2')
+            var vel = Number(input2.value)
+            if (vel > 50) {
+                res2.innerHTML += `<p>ande devagar seu porra, acima de ${vel}km/h você vai bater!</p>`
+            
+            }
+            res2.innerHTML += 'Use sempre cinto de segurança'
+        }
+
+        // mesmo que não seja um número, o JS só vai tirar o valor doque foi escrito com uma variável pra tirar value
+    </script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulo D - Condições</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial;
+
+    }
+    header {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 40px;
+        margin-bottom: 45px;
+
+    }
+    main {
+        margin: auto;
+        text-align: center;
+    }
+    p {
+
+        font-size: 1.3em;
+    }
+    div {
+        padding: 10px;
+        max-width: 95vw;
+        border: 2px solid black;
+        border-radius: 15px;
+        margin:  15px auto;
+        text-align: start;
+    }
+    div p {
+        padding: 10px;
+    }
+    .exemplo {
+        font-size: 0.9em;
+        text-align: center;
+        line-height: 1.2em;
+        width: 350px;
+        margin: auto;
+    }
+    h2 {
+        padding: 10px;
+    }
+    ul {
+        list-style-position: inside;
+        padding: 10px;
+    }
+    code {
+        color: rgb(184, 184, 0);
+    }
+
+</style>
+<body>
+    <header>
+        <h1>Condições</h1>
+    </header>
+    <main>
+        <h2>Sequências</h2>
+        <p>antes de falar de condições, é muito importante citar as sequências</p>
+        <div>
+            <p>são as ordens(comandos) em um fluxo para gerar um script, ou seja, a sequência de instruções para fazer a atividade</p>
+
+            <p>porém existem situações em que a sequência precisa se comportar de duas maneiras diferentes para criar uma atividade, exemplo:</p>
+
+            <p class="exemplo">em casos de uma escolha (condição), em que dois eventos diferentes acontecerão de acordo com sua escolha, há uma diferença na sequência. </p>
+        </div>
+        <h2>Condições</h2>
+
+        <div>
+            <p>
+                imagine a condição como uma placa que sinaliza que só pode virar à esquerda ou à direita, que te força a uma escolha, tendo 1 resultado para cada escolha.
+            </p>
+            <ul>
+                <li>Condição Simples (if)</li>
+                <li>Condição Composta(if e else)</li>
+                <li>Condição Aninhada (elseif)</li>
+                <li>Condições Múltiplas(switch case)</li>
+            </ul>
+            <p>if = se</p>
+
+            <p>else = senão</p>
+        </div>
+        <div>
+            <p>
+                <pre>
+                    <code>
+                        if (idade < 16) {
+                            console.log(`tu é de menor otaro.`)
+                        
+                        }
+                    </code>
+                </pre>
+            </p>
+        </div>
+        <div>
+            <p>
+                essa é a estrutura da condição simples (somente if)
+            </p>
+            <p>
+                <pre>
+                    <code>
+                        if (idade < 16) {
+                            console.log(`tu é de menor otaro.`)
+                        
+                        }
+                        else {
+                            console.log(`é de maior`)
+                        }
+                    </code>
+                </pre>
+            </p>
+        </div>
+        <div>
+            <p>essa é a estrutura da condição composta</p>
+
+            <p>
+                <pre>
+                    <code>
+                        if () {
+
+                        }
+                        else {
+
+                        }
+                        else if() {
+
+                        }
+                    </code>
+                </pre>
+            </p>
+            <p>essa é a estrutura da condição aninhada(pode ter quantos else if você quiser na condição)</p>
+        </div>
+        <div>
+            <p>
+                <pre>
+                    <code>
+                        switch (expressão) {
+
+                            case "valor 1":
+                               (break)
+
+                            case "valor 2":
+                                (break)
+
+                            case "valor 3":
+                                (break)
+
+                            default:
+                               (break)
+                        }
+                    </code>
+                </pre>
+            </p>
+            <p>essa é a condição multipla</p>
+
+            <p>o "default" é igual o else, se n for nenhum dos outros casos, o default é ativado</p>
+
+            <p>o break é aonde delimita o final do case, sem o break, o comando vai executar todos os cases até achar um break
+            </p>
+            <p>no switch não pode ser usado operadores, ou seja, não se pode criar cases com contas, ou com comparações, apenas com dados pontuais</p>
+        </div>
+    </main>
+</body>
+</html>
