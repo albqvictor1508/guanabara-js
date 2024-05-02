@@ -30,9 +30,4 @@ Projetos que fiz com o primeiro contato que tive com JS no curso do guanabara:
 
 [Analisador de Idades](https://albqvictor1508.github.io/guanabara-js/moduloD/idades.html)
 
-<style>
-    div {
-        display: inline-block;
-    }
-</style>
 
