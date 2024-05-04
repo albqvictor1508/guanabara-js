@@ -1,13 +1,15 @@
-var btn = document.getElementById('btn')
-btn.addEventListener('click', verificar)
-
 function verificar() {
     var data = new Date()
     var ano = data.getFullYear()
-    var inputt = document.getElementById('inputt')
-
-    if (inputt.value.length == 0 || inputt.value > ano) {
-        window.alert('[ERRO] Verifique se os dados estão corretos e tente novamente')
-    }
-    
 }
+if (fano.value.length == 0 || Number(fano.value) > ano ) {
+    window.alert('bota alguma coisa ai mermao')
+}
+
+
+
+//length conta a quantidade de caracteres no valor escrito.
+
+/*o operador de identidade restrita (===) é recomendado pois não só iguala os valores, como também o tipo de dado.
+
+Nesse caso é indiferente pois se trata de um input radio, mas em um input text poderia deixar mais claro pro script com que tipo de dado ele ta trabalhando*/
