@@ -4,11 +4,12 @@ function carregar() {
     var tempo = document.getElementById(`tempo`)
     var hora = document.getElementById(`hora`)
     hora.innerHTML = `Agora sao ${agora} horas. `
+    var img = document.getElementById('imagem')
 
  if(agora > 23 || agora < 6)  {
     tempo.innerHTML = `Hora da madrugada`
     document.body.style.background = `#24022c`
-    img.src = 'madrugada.png'
+    img.src = 'madrugada.jpeg'
 }
 else if (agora < 12) {
     tempo.innerHTML = `Hora do dia`
