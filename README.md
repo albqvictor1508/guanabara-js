@@ -30,4 +30,8 @@ Projetos que fiz com o primeiro contato que tive com JS no curso do guanabara:
 
 [Analisador de Idades](https://albqvictor1508.github.io/guanabara-js/moduloD/idades.html)
 
+[Horas do Dia](https://albqvictor1508.github.io/guanabara-js/moduloD/exercicios/hora/horas.html)
+
+[Verificador de Idades](https://albqvictor1508.github.io/guanabara-js/moduloD/exercicios/idade-estadocivil/)
+
 
