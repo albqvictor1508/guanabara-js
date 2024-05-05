@@ -15,14 +15,14 @@ function verificar() {
         var img = document.createElement('img')
         if (fsex[1].checked) {
             genero = 'Mulher'
-            if (idade >= 0 && idade <= 16) {
+            if (idade >= 0 && idade <= 10) {
                 img.setAttribute('src', 'imagens/crianca-mulher.jpeg')   
             }
             else if (idade <= 18 && fcivil[0].checked) {
                 img.setAttribute('src', 'imagens/NoisNoBanquin.jpeg')
             }
             else if (idade <= 21) {
-                img.setAttribute('src', 'imagens/lexsa.jpeg')
+                img.setAttribute('src', 'imagens/mulherjovem.jpg')
             }
             else if (idade < 51) {
                 img.setAttribute('src', 'imagens/mulher.png')
@@ -41,7 +41,7 @@ function verificar() {
                 img.setAttribute('src', 'imagens/NoisNoBanquin.jpeg')
             }
             else if (idade <= 21) {
-                img.setAttribute('src', 'imagens/perfil.jpg')
+                img.setAttribute('src', 'imagens/jovem.jpeg')
             }
             else if (idade < 51) {
                 img.setAttribute('src', 'imagens/gigachad.jpeg')
@@ -57,7 +57,8 @@ function verificar() {
             estado = 'Solteiro/a'
         }
         res.style.textAlign = 'center'
-        res.innerHTML = `Detectamos ${genero}, ${estado} com ${idade} anos!`
+        res.innerHTML = `Você é:  ${genero}, ${estado} com ${idade} anos!`
+        res.style.display = 'block'
         res.appendChild(img)
     }
     
