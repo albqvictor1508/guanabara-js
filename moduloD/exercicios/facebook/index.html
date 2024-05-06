@@ -11,31 +11,51 @@
             padding: 0;
             box-sizing: border-box
  }
+ body {
+    font-family: 'Roboto';
+ }
 
-header, a {
+header {
             display: flex;
             justify-content: space-between;
             color: white;
             text-decoration: none;
-            background-color: rgb(3, 36, 105);
+            align-items: center;
+            background-color: #032469;
+            padding: 10px;
 
         }
+a {
+    color: white;
+    text-decoration: none;
+}
 ul {
             display: flex;
             list-style: none;
+            align-items: center;
             gap: 20px;
         }
 button {
-            background-color: blue;
+            background-color: #032469;
             color: white;
             padding: 5px;
 
 
 }
  img {
-            width: 35px;
-}
+            width: 45px;
+            border-radius: 50%;
 
+}
+button {
+    border: 1px solid white;
+    border-radius: 15px;
+    
+}
+.corpo {
+    background-color: rgb(209, 206, 206);
+    height: 86.9vw;
+}
     </style>
 </head>
 <body>
@@ -55,6 +75,25 @@ button {
         </div>
 
     </header>
+    <main>
+
+        <div class="corpo">
+
+            <div class="facebook">
+                <h2>facebook</h2>
+                
+                <p>O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.</p>
+            </div>
+
+            <div class="form">
+                <form method="post">
+                    <input type="email" placeholder="Email ou telefone">
+                    <input type="password" placeholder="Senha">
+                </form>
+            </div>
+            
+        </div>
+    </main>
     
 </body>
 </html>
