@@ -23,38 +23,97 @@ header {
             align-items: center;
             background-color: #032469;
             padding: 10px;
+            font-weight: bold;
 
         }
-a {
+
+header a {
     color: white;
     text-decoration: none;
+    
 }
+ button a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto'
+}
+a:hover {
+    text-decoration: underline;
+}
+a {
+    text-decoration: none;
+}
+
 ul {
             display: flex;
             list-style: none;
             align-items: center;
             gap: 20px;
         }
-button {
-            background-color: #032469;
+header button {
+            background-color: #0582d6;
             color: white;
-            padding: 5px;
-
-
+            padding: 7px;
+            border-radius: 10px;
+            border: 0px;
+            font-weight: bold;
 }
  img {
             width: 45px;
             border-radius: 50%;
 
-}
-button {
-    border: 1px solid white;
-    border-radius: 15px;
-    
-}
+}   
+
 .corpo {
     background-color: rgb(209, 206, 206);
-    height: 86.9vw;
+    height: 40vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.form {
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+
+}
+.form button {
+    margin: auto;
+    border-radius: 5px;
+    padding: 8px;
+    border: 0px;
+    display: block;
+    font-family: 'Roboto';
+    font-weight: bold;
+    color: white;
+}
+form #btn1 {
+    width: 285px;
+    background-color: rgb(0, 60, 255);
+    margin: 10px auto;
+}
+form p {
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9em;
+}
+.inputs {
+    padding: 4px;
+    border-radius: 5px;
+
+}
+input {
+    padding: 7px;
+    border: 1px solid rgba(0, 0, 0, 0.247);
+    border-radius: 5px;
+    width: 270px;
+}
+#btn2 {
+    background-color: rgb(8, 218, 8);
+    margin: 10px auto;
+}
+hr {
+    opacity: 30%;
 }
     </style>
 </head>
@@ -67,9 +126,9 @@ button {
 
             <div>
                 <ul>
-                    <li>Registrar-se</li>
-                    <li>nsei</li>
-                    <li>nsei</li>
+                    <li><a href="#">Registrar-se</a></li>
+                    <li><a href="#">nsei</a></li>
+                    <li><a href="#">nsei</a></li>
                     <li><button><a href="https://github.com/albqvictor1508/guanabara-js">Sobre mim</a></button></li>
                 </ul>
         </div>
@@ -87,10 +146,16 @@ button {
 
             <div class="form">
                 <form method="post">
-                    <input type="email" placeholder="Email ou telefone">
-                    <input type="password" placeholder="Senha">
+                    <p class="inputs"><input type="email" placeholder="Email ou telefone"></p>
+                    <p class="inputs"><input type="password" placeholder="Senha"></p>
+                    <button id="btn1">Entrar</button>
+                    <p><a href="#">Esqueceu a senha?</a></p>
+                    <hr>
+                    <button id="btn2">Criar nova conta</button>
                 </form>
             </div>
+            
+
             
         </div>
     </main>
