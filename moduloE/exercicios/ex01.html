@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: rgb(71, 3, 136);
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            display: grid;
+            place-content: center;
+            place-items: center;
+            height: 100vh;
+        }
+        section {
+            margin: 7px 10px;
+            background-color: white;
+            width: 350px;
+            padding: 20px 10px;
+            font-size: 1.2em;
+            border-radius: 10px;
+            box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.548);
+            color: black;
+            
+        }
+        a {
+            color: white;
+            text-decoration: none;
+        }
+        h3 {
+            margin-top: 20px;
+        }
+        main > p {
+            text-align: center;
+        }
+        input {
+            margin-bottom: 5px;
+        }
+        #input1 {
+            margin-left: -3px; 
+        }
+         
+            
+        
+    </style>
+</head>
+<body>
+    <h1>Lembrete (Aprender a usar o debug na aula 14) </h1>
+
+    <main>
+
+        <h3>Modelo</h3>
+        <section>
+           <p>
+               <label for="input1">Inicio:</label>
+               <input type="number" min="0" id="input1"/>
+           </p>
+
+           
+           <p>
+               <label for="input2">Fim:</label>
+               <input type="number" min="1" id="input2"/>
+           </p> 
+
+           <p id="res"></p>
+
+           <button id="btn">Verificar</button>
+        </section>
+        <p><a href="#">Github:albqvictor1508</a></p>
+    </main>
+
+    <script src="ex01.js"></script>
+</body>
+</html>
