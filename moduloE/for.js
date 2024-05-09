@@ -13,7 +13,8 @@ c = 1
 while (c <= 20) {
     console.log(`while ${c}`)
     c++
-}   
+} 
+console.log('\n')  
 console.log (`agora utilizando o for\n` ) 
  
 
@@ -23,11 +24,12 @@ for (a=1;a<=20;a++) {
     console.log(`for ${a}`)
 }
 
-
+console.log('\n')  
+console.log (`agora utilizando o do\n` ) 
 
 
 do {
-    console.log(b)
+    console.log(`do ${b}`)
     b++
 
 }
