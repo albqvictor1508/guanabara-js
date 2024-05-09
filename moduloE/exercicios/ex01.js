@@ -25,4 +25,4 @@ else {
     
 }
 }
-//no for, foi criada a variável c, e nela foi dado o valor do n1, 
+//no for, foi criada a variável c, e nela foi dado o valor do n1, enquanto for menor que n2 (fim), vai continuar repetindo, e o incremento é que a cada vez que o numero for repetido, adicionará o numero q foi colocado no n3(passo)

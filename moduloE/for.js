@@ -20,7 +20,7 @@ console.log (`agora utilizando o for\n` )
 
 
 
-for (a=1; a<=20; a++, a += 'vito') {
+for (a=1; a<=20; a ++) {
     console.log(`for ${a}`)
 }
 
