@@ -20,7 +20,7 @@ console.log (`agora utilizando o for\n` )
 
 
 
-for (a=1;a<=20;a++) {
+for (a=1; a<=20; a++, a += 'vito') {
     console.log(`for ${a}`)
 }
 
@@ -37,3 +37,5 @@ while (b <= 10 )
 
 
 //todos fazem a mesma coisa, com estruturas diferentes   
+
+//o incremento não é obrigatório, serve para fazer uma alteração no elemento a cada vez que ele for repetido no loop
