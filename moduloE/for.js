@@ -8,10 +8,11 @@
 
 a = 1  
 b = 1
+c = 1
 
-while (a <= 20) {
-    console.log(`while ${a}`)
-    a++
+while (c <= 20) {
+    console.log(`while ${c}`)
+    c++
 }   
 console.log (`agora utilizando o for\n` ) 
  
