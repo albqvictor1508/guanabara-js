@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Tabuada</title>
     <style>
-        * {
+         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -47,41 +46,41 @@
         #input1 {
             margin-left: -3px; 
         }
+        textarea {
+            width: 200px;
+            height: 100px;
+            text-align: center;
+            margin: 12px auto;
+        }
+        p {
+            text-align: center;
+        }
+        #btn {
+            background-color: #470388;
+            color: white;
+            padding: 2px;
+            border-radius: 5px;
+            border: 0px;
+            font-size: 0.7em;
+
+        }
+
          
-            
-        
     </style>
 </head>
 <body>
-    <h1>Lembrete (Aprender a usar o debug na aula 14) </h1>
-
     <main>
-
-        <h3>Modelo</h3>
+        <h2>Tabuada</h2>
         <section>
-           <p>
-               <label for="input1">Inicio:</label>
-               <input type="number" min="0" id="input1"/>
-           </p>
+            <label for="input1">Número:</label>
 
-           
-           <p>
-               <label for="input2">Fim:</label>
-               <input type="number" min="1" id="input2"/>
-           </p>
+            <input type="number" id="input1"/>
+            <input type="button" value="Gerar" id="btn">
 
-           <p>
-            <label for="input3">Passo:</label>
-            <input type="number" name="passo" id="input3">
-           </p>
-
-           <p id="res"></p>
-
-           <button id="btn">Verificar</button>
+            <p><textarea placeholder="Digite um número acima" id="select"></textarea></p>
         </section>
-        <p><a href="#">Github:albqvictor1508</a></p>
     </main>
-
-    <script src="ex01.js"></script>
+    
+    <script src="ex02.js"></script>
 </body>
 </html>

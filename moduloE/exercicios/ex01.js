@@ -5,15 +5,16 @@ function verificar() {
 
 var input1 = document.getElementById(`input1`)
 var input2 = document.getElementById(`input2`)
+var input3 = document.getElementById(`input3`)
+
 var res = document.getElementById(`res`)
 
 
-var n1 = Number(input1.value)
-var n2 = Number(input2.value)
-
-for (n1;n1 <= n2; n1++) {
-
-    res.innerHTML = `Toma: ${n1}` 
-
+if (input1.value.length == 0 || input2.value.length == 0 || input3.value.length == 0) {
+    window.alert('bota numero porra')
+}
+else if (input1.value.length == 0) {
+    window.alert('falta o inicio')
+    
 }
 }
