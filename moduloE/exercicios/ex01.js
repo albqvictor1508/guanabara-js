@@ -20,7 +20,18 @@ else {
     let n3 = Number(input3.value)
 
     for(let c = n1; c <= n2; c += n3) {
-        res.innerHTML += `${c} ...`
+        res.innerHTML += `${c}...`
+    }
+
+    if(n1 > n2) {
+        for (let c = n1; c <= n2; c -= n3) {
+            res.innerHTML += `${c}...`
+        }
+    }
+    else {
+        for (let c = n1; c <= n2; c += n3) {
+            res.innerHTML = `${c}...`
+        }
     }
     
 }

@@ -10,4 +10,8 @@ let n1 = Number(input.value)
 let n2 = 1
 let resposta = n1 * n2
 
+for (let c = n2; n2 <= 10; n2++)
+
+    select.innerHTML = `${n1} * ${n2} = ${resposta}`
+
 }
