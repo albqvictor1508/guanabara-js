@@ -7,10 +7,7 @@ function tabuada() {
     var input = document.getElementById('input1')
 let select = document.getElementById('select')
 let n1 = Number(input.value)
+let n2 = 1
+let resposta = n1 * n2
 
-
-while (contador >= 10) {
-select.innerHTML = contador
-contador++
-}
 }
