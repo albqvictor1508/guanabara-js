@@ -1,39 +1,42 @@
-var btn = document.getElementById(`btn`)
-btn.addEventListener(`click`, verificar)
+var btn = document.getElementById('btn')
+btn.addEventListener('click', verificar)
 
 function verificar() {
-
-let input1 = document.getElementById(`input1`)
-let input2 = document.getElementById(`input2`)
-let input3 = document.getElementById(`input3`)
-
-var res = document.getElementById(`res`)
+    let input1 = document.getElementById('input1')
+    let input2 = document.getElementById('input2')
+    let input3 = document.getElementById('input3')
+    let res = document.getElementById('res')
 
 
-if (input1.value.length == 0 || input2.value.length == 0 || input3.value.length == 0) {
-    window.alert('bota numero porra')
-}
-else {
-    res.innerHTML = `Contando...`
-    let n1 = Number(input1.value)
-    let n2 = Number(input2.value)
-    let n3 = Number(input3.value)
-
-    for(let c = n1; c <= n2; c += n3) {
-        res.innerHTML += `${c}...`
-    }
-
-    if(n1 > n2) {
-        for (let c = n1; c <= n2; c -= n3) {
-            res.innerHTML += `${c}...`
-        }
+    if (input1.value.length == 0 || input2.value.length == 0 || input3.value.length == 0 ) {
+        alert('bota numero seu merda')
     }
     else {
-        for (let c = n1; c <= n2; c += n3) {
-            res.innerHTML = `${c}...`
+        let inicio = Number(input1.value)
+        let fim = Number(input2.value)
+        let passo = Number(input3.value)
+        if (passo <= 0) {
+            alert('Não pode macaco, vamo considerar que é passo 1')
+
+            passo = 1
+        }
+        if (inicio < fim) {
+            //contagem crescente
+            for (let c = inicio; c <= fim; c += passo) {
+
+                res.innerHTML += `\u{1F51C} ${c} `      
+            }
+        }
+        else {
+            //contagem decrescente
+
+            for (let c = inicio; c >= fim; c -= passo) {
+
+                res.innerHTML += `\u{1F51C} ${c}`
+
+            }
         }
     }
     
 }
-}
-//no for, foi criada a variável c, e nela foi dado o valor do n1, enquanto for menor que n2 (fim), vai continuar repetindo, e o incremento é que a cada vez que o numero for repetido, adicionará o numero q foi colocado no n3(passo)
+res.innerHTML += `Contando: \u{1F3C1}`
