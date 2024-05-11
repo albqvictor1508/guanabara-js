@@ -13,7 +13,9 @@ function calcular() {
         let c
 
         //na tag "select" no html foi criada a tag "option", para que os dados expressos pelo loop da estrutura "for" apareçam nas opções da tag "select"
+        select.innerHTML = ''
 
+        
         for(c = 1;c <= 10; c += 1) {
 
             console.log(c)
@@ -33,6 +35,14 @@ function divisao() {
     let input2 = document.getElementById('input2')
     let select2 = document.getElementById('select2')
 
+
+    if (input1.value.length == 0) {
+        alert('bota numero seu fudido, sem familia, nojento, imundo, asqueroso')
+    }
+    else {
+
+        select2.innerHTML = ''
+
     for (let b = 1; b <= 10; b ++) {
         let resposta2 = Number(input2.value) / b 
         let item2 = document.createElement('option')
@@ -40,6 +50,7 @@ function divisao() {
         select2.appendChild(item2)
     }
 
+}
 }
 
 
