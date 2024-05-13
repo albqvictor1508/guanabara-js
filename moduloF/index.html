@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <main>
+        <h2>Valores - Array</h2>
+
+        <p>Digite qual elemento do array você quer (começando do zero)</p>
+
+        <p id="array"></p>
+
+        <button id="ordem" onclick="ordemCrescente()">Ordem Crescente</button>
+
+        <p>Número: <input type="number" id="inputNumber"/></p>
+
+        <p>
+        <button id="enviar" onclick="retirar()">Enviar</button>
+
+        <p id="res">Elemento:</p>
+        </p>
+
+
+
+    </main>
+
+
+
+    <script>
+        let array = document.getElementById('array')
+        let inputNumber = document.getElementById('inputNumber')
+        let vetor = [10, 25, 15, 30, 5, 125]
+        let res = document.getElementById('res')
+        let ordem = document.getElementById('ordem')
+
+        array.innerHTML = vetor
+
+        function ordemCrescente() {
+            let vetorNum = Number(vetor)
+
+            array.innerText = vetorNum.sort()
+
+
+        }
+        function retirar() {
+            let n1 = Number(inputNumber.value)
+            res.innerText = ``
+            
+            switch (n1) {
+                case 0: res.innerText += `${vetor[0]} (primeiro elemento do array)`
+                break
+
+                case 1: res.innerText += `${vetor[1]} (segundo elemento do array)`
+                break
+
+                case 2: res.innerText += `${vetor[2]} (terceiro elemento do array)`
+                break
+
+                case 3: res.innerText += `${vetor[3]} (quarto elemento do array)`
+                break
+
+                case 4: res.innerText += `${vetor[4]} (quinto elemento do array)`
+
+            }
+
+        }
+        console.log(typeof(vetorNum))
+
+
+    </script>
+</body>
+</html>
