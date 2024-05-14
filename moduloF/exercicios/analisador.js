@@ -46,9 +46,3 @@ function adicionar() {
         console.log(arr)
     }
 }
-function finalizar() {
-    let res = document.getElementById('resFinalizar')
-    let resItem = document.createElement('p')
-    resItem.text = `Ao total, teve em média ${arr} números`
-    res.appendChild(resItem)
-}
