@@ -25,6 +25,8 @@ for (a=1; a<=20; a ++) {
 }
 
 console.log('\n')  
+
+
 console.log (`agora utilizando o do\n` ) 
 
 
