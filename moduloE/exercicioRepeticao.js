@@ -11,7 +11,6 @@ function nota(n) {
                 console.log('macaco burro n passoukkkkkkkkkkkkkkkkkkkkkkk')
 
             }
-            console.log('vai tomar no cu burro')
         }
     }
 }
