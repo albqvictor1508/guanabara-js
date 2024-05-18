@@ -18,6 +18,6 @@ let vito = {
 
 }
 
-var teste logico = '$victor'
-console.log(teste logico)
+var teste = '$victor'
+console.log(teste)
 vito.envelhecer(10)
