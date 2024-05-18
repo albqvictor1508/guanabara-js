@@ -8,7 +8,13 @@ como de costume nas linguagens de programação, a contagem começa do 0, então
 
 no JavaScript os arrays são feitos desta maneira:
 
-(let a = [])
+(let a = [] )
 
 mais informações sobre manipulação de arrays no "array.js"
+
+usando o array[n], você tem que especificar o índice no qual o elemento vai ser inserido, se possui 4 elementos (do 0 ao 3) teria que colocar array[4]
+
+usando o array.push() vc pode colocar qualquer elemento dentro do array sem se preocupar com o índice do elemento
+
+
 
